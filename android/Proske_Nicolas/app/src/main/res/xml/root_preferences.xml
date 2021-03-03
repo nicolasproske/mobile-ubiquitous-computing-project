@@ -1,0 +1,46 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/mqtt_header">
+
+        <EditTextPreference
+            android:key="broker_ip"
+            android:singleLine="true"
+            app:defaultValue="@string/broker_ip_default_value"
+            app:title="@string/broker_ip_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:key="broker_sub_topic"
+            android:singleLine="true"
+            app:defaultValue="@string/broker_sub_topic_default_value"
+            app:title="@string/broker_sub_topic_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:key="broker_pub_topic"
+            android:singleLine="true"
+            app:defaultValue="@string/broker_pub_topic_default_value"
+            app:title="@string/broker_pub_topic_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            android:key="sensor_source"
+            app:defaultValue="@string/sensor_source_default_value"
+            app:entries="@array/sensor_entries"
+            app:entryValues="@array/sensor_values"
+            app:title="@string/sensor_source_title"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/sound_header">
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:key="sound"
+            app:title="@string/sound_title" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

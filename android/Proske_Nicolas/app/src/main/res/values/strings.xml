@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StA_MaUC_Proske_Nicolas</string>
+    <string name="toolbar_title">Hole in One</string>
+    <string name="action_settings">Einstellungen</string>
+
+    <!-- Preference Titles -->
+    <string name="mqtt_header">MQTT</string>
+    <string name="sound_header">Sound</string>
+
+    <!-- Messages Preferences -->
+    <string name="broker_ip_title">IP-Adresse des MQTT-Brokers</string>
+    <string name="broker_sub_topic_title">Sub-Topic</string>
+    <string name="broker_pub_topic_title">Pub-Topic</string>
+    <string name="sensor_source_title">Sensorquelle</string>
+
+    <!-- Sound Preferences -->
+    <string name="sound_title">Sound</string>
+
+    <string name="sensor_source_default_value">Remote</string>
+    <string name="broker_ip_default_value">192.168.2.76</string>
+    <string name="broker_sub_topic_default_value">StA/data</string>
+    <string name="broker_pub_topic_default_value">StA/message</string>
+</resources>
